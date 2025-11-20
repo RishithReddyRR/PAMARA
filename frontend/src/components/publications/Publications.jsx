@@ -116,7 +116,7 @@ const Publications = () => {
         currentYear
       )
     );
-  }, [dispatch, error]);
+  }, [dispatch, error,currentPage]);
   const downloadAsWorkbook = () => {
     const ws = utils.json_to_sheet(totalPublications);
     /* create workbook and append worksheet */

@@ -234,7 +234,7 @@ exports.getAllUsers = asyncErrorHandler(async (req, res, next) => {
 
 //update pass(to be deleted later)
 exports.temp = asyncErrorHandler(async (req, res) => {
-  const u = await user.findOne({ name: "Gunupudi Rajesh Kumar" });
+  const u = await user.findOne({ name: "Dr.Gunupudi Rajesh Kumar" });
   u.password = "rajesh sir";
   await u.save();
   res.status(200).json({
