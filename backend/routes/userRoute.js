@@ -20,6 +20,6 @@ router.route('/update').put(temp)
 router.route('/scrap_user_pubs').put(isAuthenticatedUser,scrapDetails)
 router.route('/scrap_all_pubs').put(scrapAllPublications)
 router.route('/users_by_department').get(usersByDepartment)
-router.route('/users').get(isAuthenticatedUser,authorizedRoles(['admin']),getAllUsers)
+router.route('/users').get(isAuthenticatedUser,authorizedRoles('admin'),getAllUsers)
 
 module.exports=router

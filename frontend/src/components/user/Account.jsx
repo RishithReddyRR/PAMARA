@@ -163,7 +163,7 @@ const Account = () => {
       dispatch({ type: "CLEAR_ERRORS" });
     }
     // console.log(file)
-  }, [error, currentPage, ob.error, ob.success, loading, success, errorS]);
+  }, [error, currentPage, ob.error, ob.success, loading, success, errorS,currentPage]);
   const downloadAsWorkbook = () => {
     const ws = utils.json_to_sheet(totalPublications);
     /* create workbook and append worksheet */
